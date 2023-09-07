@@ -1,0 +1,14 @@
+body {
+    min-width: 200px;
+  }
+  
+  .countdown {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #countdown-timer {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
