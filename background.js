@@ -1,6 +1,6 @@
 chrome.alarms.create("restAlarm", {
-  delayInMinutes: 2,
-  periodInMinutes: 2
+  delayInMinutes: 20,
+  periodInMinutes: 20
 });
 
 let popupWindowId; // Store the ID of the popup window
@@ -58,8 +58,8 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
           chrome.alarms.clear("restAlarm", function (wasCleared) {
             if (wasCleared) {
               chrome.alarms.create("restAlarm", {
-                delayInMinutes: 2,
-                periodInMinutes: 2
+                delayInMinutes: 20,
+                periodInMinutes: 20
               });
             }
           });
